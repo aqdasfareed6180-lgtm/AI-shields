@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Intelligent Fraud and Phishing Protection System">
+
+    <title>AI Shield | Fraud & Phishing Protection</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND EFFECTS
+    ========================================== -->
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home"
+               class="logo">
+
+                <span class="logo-icon">🛡️</span>
+
+                <span>
+                    AI <strong>SHIELD</strong>
+                </span>
+
+            </a>
+
+
+            <div class="security-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    Protection Active
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             HERO SECTION
+        ====================================== -->
+
+        <section class="hero"
+                 id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+
+                    <span>✦</span>
+
+                    Intelligent Threat Detection
+
+                </div>
+
+
+                <h1>
+
+                    Detect Fraud
+                    <span>Before It Detects You.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Analyze suspicious URLs, SMS messages and
+                    emails using intelligent security checks
+                    and receive an instant risk assessment.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#scanner"
+                       class="primary-button">
+
+                        🛡️ Start Scanning
+
+                    </a>
+
+
+                    <a href="#how-it-works"
+                       class="secondary-button">
+
+                        How It Works ↓
+
+                    </a>
+
+                </div>
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong>24/7</strong>
+
+                        <span>Protection</span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>100</strong>
+
+                        <span>Risk Score</span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>⚡</strong>
+
+                        <span>Instant Analysis</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO SHIELD -->
+
+            <div class="hero-visual">
+
+                <div class="shield-container">
+
+                    <div class="shield-ring ring-one"></div>
+
+                    <div class="shield-ring ring-two"></div>
+
+                    <div class="shield">
+
+                        <span>🛡️</span>
+
+                    </div>
+
+                    <div class="orbit-dot dot-one"></div>
+                    <div class="orbit-dot dot-two"></div>
+                    <div class="orbit-dot dot-three"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCANNER
+        ====================================== -->
+
+        <section class="scanner-section"
+                 id="scanner">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    🔍 SECURITY SCANNER
+                </div>
+
+                <h2>
+                    Analyze Suspicious Content
+                </h2>
+
+                <p>
+                    Paste a URL, SMS, email or suspicious message
+                    below to check its risk level.
+                </p>
+
+            </div>
+
+
+            <div class="scanner-card">
+
+                <div class="scanner-top">
+
+                    <div class="scanner-title">
+
+                        <span class="scanner-icon">
+                            🔎
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Threat Analyzer
+                            </h3>
+
+                            <p>
+                                Enter content for security analysis
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="live-badge">
+
+                        <span></span>
+
+                        LIVE
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-wrapper">
+
+                    <textarea
+                        id="content"
+                        placeholder="Example: URGENT! Verify your account immediately at https://example.com..."
+                        spellcheck="false"></textarea>
+
+
+                    <div class="input-bottom">
+
+                        <span id="characterCount">
+                            0 characters
+                        </span>
+
+                        <button
+                            id="clearButton"
+                            class="clear-button">
+
+                            Clear
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="scanButton"
+                    class="scan-button">
+
+                    <span class="scan-icon">
+                        🛡️
+                    </span>
+
+                    <span>
+                        Analyze Threat
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <div class="scan-note">
+
+                    🔒 Your input is analyzed locally by
+                    the application's detection engine.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             LOADING
+        ====================================== -->
+
+        <div id="loading"
+             class="loading-container hidden">
+
+            <div class="scanner-animation">
+
+                <div class="scanner-line"></div>
+
+                <div class="scanner-circle">
+                    🛡️
+                </div>
+
+            </div>
+
+            <h3>
+                Analyzing Threat...
+            </h3>
+
+            <p>
+                Checking URL structure, suspicious indicators
+                and security patterns.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             RESULT SECTION
+        ====================================== -->
+
+        <section id="result"
+                 class="result-section hidden">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    📊 ANALYSIS RESULT
+                </div>
+
+                <h2>
+                    Security Assessment
+                </h2>
+
+            </div>
+
+
+            <div class="result-grid">
+
+
+                <!-- SCORE CARD -->
+
+                <div class="score-card result-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="small-label">
+                                THREAT SCORE
+                            </span>
+
+                            <h3>
+                                Risk Assessment
+                            </h3>
+
+                        </div>
+
+                        <span class="card-icon">
+                            📈
+                        </span>
+
+                    </div>
+
+
+                    <div class="score-circle">
+
+                        <div class="score-circle-inner">
+
+                            <span id="score">
+                                0
+                            </span>
+
+                            <small>
+                                /100
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="level"
+                         class="risk-level">
+
+                        LOW
+
+                    </div>
+
+
+                    <p class="score-description">
+
+                        Higher scores indicate more
+                        suspicious indicators.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- REASONS -->
+
+                <div class="reasons-card result-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="small-label">
+                                DETECTION DETAILS
+                            </span>
+
+                            <h3>
+                                Why This Was Flagged
+                            </h3>
+
+                        </div>
+
+                        <span class="card-icon">
+                            🚨
+                        </span>
+
+                    </div>
+
+
+                    <ul id="reasonsList"
+                        class="reasons-list">
+                    </ul>
+
+                </div>
+
+
+
+                <!-- RECOMMENDATION -->
+
+                <div class="recommendation-card result-card">
+
+                    <div class="recommendation-icon">
+                        🛡️
+                    </div>
+
+                    <div>
+
+                        <span class="small-label">
+                            SAFETY RECOMMENDATION
+                        </span>
+
+                        <h3>
+                            Stay Protected
+                        </h3>
+
+                        <p id="recommendation">
+                            -
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button id="newScanButton"
+                    class="secondary-action">
+
+                🔄 Analyze Another
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =====================================
+             HOW IT WORKS
+        ====================================== -->
+
+        <section class="how-section"
+                 id="how-it-works">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    ⚙️ HOW IT WORKS
+                </div>
+
+                <h2>
+                    Three Steps to Stay Safe
+                </h2>
+
+                <p>
+                    Our system analyzes suspicious content
+                    and provides a simple security assessment.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Paste Content
+                    </h3>
+
+                    <p>
+                        Enter a suspicious URL, SMS,
+                        email or message.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        The detection engine checks
+                        multiple suspicious indicators.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-icon">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Stay Protected
+                    </h3>
+
+                    <p>
+                        Get a risk score, reasons and
+                        safety recommendation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             DETECTION FEATURES
+        ====================================== -->
+
+        <section class="features-section">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    🔐 SECURITY FEATURES
+                </div>
+
+                <h2>
+                    What We Check
+                </h2>
+
+            </div>
+
+
+            <div class="features-grid">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🌐
+                    </div>
+
+                    <h3>
+                        URL Analysis
+                    </h3>
+
+                    <p>
+                        Checks suspicious URL structures,
+                        IP addresses and unusual patterns.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔗
+                    </div>
+
+                    <h3>
+                        Shortened URLs
+                    </h3>
+
+                    <p>
+                        Detects common URL shortening
+                        services that hide destinations.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>
+                        Suspicious Domains
+                    </h3>
+
+                    <p>
+                        Identifies suspicious domain
+                        characteristics and keywords.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔒
+                    </div>
+
+                    <h3>
+                        Security Signals
+                    </h3>
+
+                    <p>
+                        Checks HTTPS, subdomains,
+                        special characters and URL structure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                🛡️ AI <strong>SHIELD</strong>
+
+            </div>
+
+            <p>
+                Intelligent Fraud & Phishing Protection System
+            </p>
+
+            <div class="footer-line"></div>
+
+            <small>
+                Stay Alert • Stay Safe • Stay Protected
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
